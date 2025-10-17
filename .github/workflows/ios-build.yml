@@ -18,7 +18,7 @@ jobs:
     - name: Setup Flutter
       uses: subosito/flutter-action@v2
       with:
-        flutter-version: '3.16.0'
+        flutter-version: '3.24.0'
         channel: 'stable'
         
     - name: Setup Xcode
@@ -26,21 +26,18 @@ jobs:
       with:
         xcode-version: 'latest'
         
-    - name: Debug - List directory contents
-      run: |
-        echo "=== Root directory ==="
-        ls -la
-        echo "=== centro_emprendedores_app directory ==="
-        ls -la centro_emprendedores_app/
-        echo "=== pubspec.yaml exists? ==="
-        ls -la centro_emprendedores_app/pubspec.yaml
-        
     - name: Install dependencies
       run: |
         cd centro_emprendedores_app
-        echo "=== Current directory ==="
-        pwd
-        echo "=== Flutter doctor ==="
-        flutter doctor -v
-        echo "=== Flutter pub get ==="
-        flutter pub get --verbose
+        flutter pub get
+        
+    - name: Build iOS (no codesign)
+      run: |
+        cd centro_emprendedores_app
+        flutter build ios --release --no-codesign
+        
+    - name: Upload build artifacts
+      uses: actions/upload-artifact@v4
+      with:
+        name: ios-build
+        path: centro_emprendedores_app/build/ios/Release-iphoneos/
