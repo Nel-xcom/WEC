@@ -1,0 +1,15 @@
+# The Appfile is a configuration file for fastlane. It's usually placed in the root of the project.
+# It contains metadata about your app that can be used by fastlane.
+# If you want to get a list of all available options run `fastlane docs`
+
+# The name of your app
+app_identifier("com.terricola.centro_emprendedores_app")
+
+# Your Apple Developer Portal username
+# apple_id("your_apple_id@example.com")
+
+# It is recommended to add your Apple ID Team ID here
+# team_id("TEAM_ID")
+
+# For more information about the Appfile, see:
+#     https://docs.fastlane.tools/advanced/#appfile
