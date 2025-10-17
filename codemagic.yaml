@@ -1,0 +1,35 @@
+echo workflows:
+  ios-workflow:
+    name: iOS Workflow
+    max_build_duration: 60
+    environment:
+      ios_signing:
+        distribution_type: development
+      flutter: stable
+      xcode: latest
+      cocoapods: default
+    scripts:
+      - name: Set Flutter version
+        script: |
+          flutter sdk use $FLUTTER_VERSION
+      - name: Get Flutter packages
+        script: |
+          cd centro_emprendedores_app
+          flutter pub get
+      - name: Flutter analyze
+        script: |
+          cd centro_emprendedores_app
+          flutter analyze
+      - name: Build iOS
+        script: |
+          cd centro_emprendedores_app
+          flutter build ios --release --no-codesign
+    artifacts:
+      - centro_emprendedores_app/build/ios/ipa/*.ipa
+    publishing:
+      email:
+        recipients:
+          - terricolaproject@gmail.com
+        notify:
+          success: true
+          failure: true > codemagic.yaml
