@@ -5,6 +5,7 @@ workflows:
     environment:
       ios_signing:
         distribution_type: development
+        bundle_identifier: com.terricola.centro_emprendedores_app
       flutter: stable
       xcode: latest
       cocoapods: default
@@ -32,4 +33,4 @@ workflows:
           - terricolaproject@gmail.com
         notify:
           success: true
-          failure: true > codemagic.yaml
+          failure: false
