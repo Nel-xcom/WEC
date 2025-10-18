@@ -169,7 +169,7 @@ class _FindCapitalScreenState extends State<FindCapitalScreen> with TickerProvid
                     // Industria
                     _buildFilterCategory(
                       context,
-                      'assets/images/icons/online-shopping.png',
+                      '/WEC/assets/images/icons/online-shopping.png',
                       'Industria',
                       ['AI', 'Crypto', 'Ecommerce'],
                     ),
@@ -177,7 +177,7 @@ class _FindCapitalScreenState extends State<FindCapitalScreen> with TickerProvid
                     // Ubicación
                     _buildFilterCategory(
                       context,
-                      'assets/images/icons/location.png',
+                      '/WEC/assets/images/icons/location.png',
                       'Ubicación',
                       ['Argentina', 'Colombia', 'Chile'],
                     ),
@@ -185,7 +185,7 @@ class _FindCapitalScreenState extends State<FindCapitalScreen> with TickerProvid
                     // Madurez del negocio
                     _buildFilterCategory(
                       context,
-                      'assets/images/icons/calendar.png',
+                      '/WEC/assets/images/icons/calendar.png',
                       'Madurez del negocio',
                       ['0-6 Meses', '6 Meses - 1 Año', '1 - 2 Años'],
                     ),
@@ -193,7 +193,7 @@ class _FindCapitalScreenState extends State<FindCapitalScreen> with TickerProvid
                     // Ingreso bruto a 12 meses
                     _buildFilterCategory(
                       context,
-                      'assets/images/icons/coin.png',
+                      '/WEC/assets/images/icons/coin.png',
                       'Ingreso bruto a 12 meses',
                       ['USD 1.000 - 10.000', 'USD 10.000 - 50.000', 'USD 50.000 - 100.000'],
                     ),
@@ -201,7 +201,7 @@ class _FindCapitalScreenState extends State<FindCapitalScreen> with TickerProvid
                     // Nivel de riesgo
                     _buildFilterCategory(
                       context,
-                      'assets/images/icons/warning.png',
+                      '/WEC/assets/images/icons/warning.png',
                       'Nivel de riesgo',
                       ['Bajo', 'Medio', 'Alto'],
                     ),
@@ -311,7 +311,7 @@ class _FindCapitalScreenState extends State<FindCapitalScreen> with TickerProvid
               // TODO: Implement hamburger menu
             },
             child: Image.asset(
-              'assets/images/icons/hamburger.png',
+              '/WEC/assets/images/icons/hamburger.png',
               width: 24,
               height: 24,
             ),
@@ -351,7 +351,7 @@ class _FindCapitalScreenState extends State<FindCapitalScreen> with TickerProvid
               // TODO: Implement notifications
             },
             child: Image.asset(
-              'assets/images/icons/bell.png',
+              '/WEC/assets/images/icons/bell.png',
               width: 24,
               height: 24,
             ),
@@ -378,11 +378,11 @@ class _FindCapitalScreenState extends State<FindCapitalScreen> with TickerProvid
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
-            _buildNavItem(context, 'assets/images/icons/home.png', false, '/marketplace'),
-            _buildNavItem(context, 'assets/images/icons/return-of-investment.png', true, '/find-capital'),
-            _buildNavItem(context, 'assets/images/icons/video-editing.png', false, '/video-editing'),
-            _buildNavItem(context, 'assets/images/icons/group-chat.png', false, '/group-chat'),
-            _buildNavItem(context, 'assets/images/icons/web.png', false, '/web'),
+            _buildNavItem(context, '/WEC/assets/images/icons/home.png', false, '/marketplace'),
+            _buildNavItem(context, '/WEC/assets/images/icons/return-of-investment.png', true, '/find-capital'),
+            _buildNavItem(context, '/WEC/assets/images/icons/video-editing.png', false, '/video-editing'),
+            _buildNavItem(context, '/WEC/assets/images/icons/group-chat.png', false, '/group-chat'),
+            _buildNavItem(context, '/WEC/assets/images/icons/web.png', false, '/web'),
           ],
         ),
       ),
@@ -407,7 +407,7 @@ class _FindCapitalScreenState extends State<FindCapitalScreen> with TickerProvid
         GestureDetector(
           onTap: _showFilterBottomSheet,
           child: Image.asset(
-            'assets/images/icons/filter.png',
+            '/WEC/assets/images/icons/filter.png',
             width: 24,
             height: 24,
           ),
@@ -492,7 +492,7 @@ class _FindCapitalScreenState extends State<FindCapitalScreen> with TickerProvid
             ),
             child: Center(
               child: Image.asset(
-                'assets/images/icons/client.png',
+                '/WEC/assets/images/icons/client.png',
                 width: 30,
                 height: 30,
                 color: const Color(0xFFFFBFF6),
@@ -605,7 +605,7 @@ class _FindCapitalScreenState extends State<FindCapitalScreen> with TickerProvid
             ),
             child: Center(
               child: Image.asset(
-                'assets/images/icons/${industry['icon']}',
+                '/WEC/assets/images/icons/${industry['icon']}',
                 width: 30,
                 height: 30,
                 color: const Color(0xFFFFBFF6),
@@ -809,7 +809,7 @@ class _FindCapitalScreenState extends State<FindCapitalScreen> with TickerProvid
             children: [
               if (data['hasVerifiedData'] == true) ...[
                 Image.asset(
-                  'assets/images/icons/check-mark.png',
+                  '/WEC/assets/images/icons/check-mark.png',
                   width: 16,
                   height: 16,
                 ),
@@ -829,7 +829,7 @@ class _FindCapitalScreenState extends State<FindCapitalScreen> with TickerProvid
           Row(
             children: [
               Image.asset(
-                'assets/images/icons/${data['categoryIcon']}',
+                '/WEC/assets/images/icons/${data['categoryIcon']}',
                 width: 16,
                 height: 16,
               ),
@@ -902,13 +902,13 @@ class _FindCapitalScreenState extends State<FindCapitalScreen> with TickerProvid
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
         children: [
           Expanded(
-            child: _buildMetricItem(context, 'assets/images/icons/profit.png', 'AGR ${data['agr']}', '(Crecimiento Anual)'),
+            child: _buildMetricItem(context, '/WEC/assets/images/icons/profit.png', 'AGR ${data['agr']}', '(Crecimiento Anual)'),
           ),
           Expanded(
-            child: _buildMetricItem(context, 'assets/images/icons/coin.png', 'TTMR \$${data['ttmr']} USD', '(Ingresos a 12 Meses)'),
+            child: _buildMetricItem(context, '/WEC/assets/images/icons/coin.png', 'TTMR \$${data['ttmr']} USD', '(Ingresos a 12 Meses)'),
           ),
           Expanded(
-            child: _buildMetricItem(context, 'assets/images/icons/client.png', 'Clientes: ${data['clients']}', '(Actualmente Activos)'),
+            child: _buildMetricItem(context, '/WEC/assets/images/icons/client.png', 'Clientes: ${data['clients']}', '(Actualmente Activos)'),
           ),
         ],
       ),
@@ -1018,7 +1018,7 @@ class _FindCapitalScreenState extends State<FindCapitalScreen> with TickerProvid
             child: Column(
               children: [
                 Image.asset(
-                  'assets/images/icons/share.png',
+                  '/WEC/assets/images/icons/share.png',
                   width: 26,
                   height: 26,
                 ),
@@ -1110,7 +1110,7 @@ class _FindCapitalScreenState extends State<FindCapitalScreen> with TickerProvid
               child: Transform.rotate(
                 angle: 1.5708, // 90 degrees (apunta izquierda)
                 child: Image.asset(
-                  'assets/images/icons/down-arrow.png',
+                  '/WEC/assets/images/icons/down-arrow.png',
                   width: 16,
                   height: 16,
                 ),
@@ -1138,7 +1138,7 @@ class _FindCapitalScreenState extends State<FindCapitalScreen> with TickerProvid
               child: Transform.rotate(
                 angle: -1.5708, // -90 degrees (apunta derecha)
                 child: Image.asset(
-                  'assets/images/icons/down-arrow.png',
+                  '/WEC/assets/images/icons/down-arrow.png',
                   width: 16,
                   height: 16,
                 ),

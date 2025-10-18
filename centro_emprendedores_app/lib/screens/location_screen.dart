@@ -95,7 +95,7 @@ class _LocationScreenState extends State<LocationScreen> {
                     children: [
                     // Ícono de ubicación - MÁS PEQUEÑO
                     Image.asset(
-                      'assets/images/icons/location.png',
+                      '/WEC/assets/images/icons/location.png',
                       width: ResponsiveHelper.getScaledWidth(context, 60),
                       height: ResponsiveHelper.getScaledHeight(context, 60),
                       errorBuilder: (context, error, stackTrace) {

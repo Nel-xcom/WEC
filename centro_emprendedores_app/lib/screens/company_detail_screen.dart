@@ -64,7 +64,7 @@ class _CompanyDetailScreenState extends State<CompanyDetailScreen> {
               // TODO: Implement hamburger menu
             },
             child: Image.asset(
-              'assets/images/icons/hamburger.png',
+              '/WEC/assets/images/icons/hamburger.png',
               width: 24,
               height: 24,
             ),
@@ -104,7 +104,7 @@ class _CompanyDetailScreenState extends State<CompanyDetailScreen> {
               // TODO: Implement notifications
             },
             child: Image.asset(
-              'assets/images/icons/bell.png',
+              '/WEC/assets/images/icons/bell.png',
               width: 24,
               height: 24,
             ),
@@ -131,11 +131,11 @@ class _CompanyDetailScreenState extends State<CompanyDetailScreen> {
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
-            _buildNavItem(context, 'assets/images/icons/home.png', true),
-            _buildNavItem(context, 'assets/images/icons/return-of-investment.png', false),
-            _buildNavItem(context, 'assets/images/icons/video-editing.png', false),
-            _buildNavItem(context, 'assets/images/icons/group-chat.png', false),
-            _buildNavItem(context, 'assets/images/icons/web.png', false),
+            _buildNavItem(context, '/WEC/assets/images/icons/home.png', true),
+            _buildNavItem(context, '/WEC/assets/images/icons/return-of-investment.png', false),
+            _buildNavItem(context, '/WEC/assets/images/icons/video-editing.png', false),
+            _buildNavItem(context, '/WEC/assets/images/icons/group-chat.png', false),
+            _buildNavItem(context, '/WEC/assets/images/icons/web.png', false),
           ],
         ),
       ),
@@ -163,7 +163,7 @@ class _CompanyDetailScreenState extends State<CompanyDetailScreen> {
                 children: [
                   if (hasVerifiedData)
                     Image.asset(
-                      'assets/images/icons/check-mark.png',
+                      '/WEC/assets/images/icons/check-mark.png',
                       width: 16,
                       height: 16,
                     ),
@@ -189,7 +189,7 @@ class _CompanyDetailScreenState extends State<CompanyDetailScreen> {
                     mainAxisSize: MainAxisSize.min,
                     children: [
                       Image.asset(
-                        'assets/images/icons/microchip.png',
+                        '/WEC/assets/images/icons/microchip.png',
                         width: 18,
                         height: 18,
                       ),
@@ -209,7 +209,7 @@ class _CompanyDetailScreenState extends State<CompanyDetailScreen> {
                     mainAxisSize: MainAxisSize.min,
                     children: [
                       Image.asset(
-                        'assets/images/icons/location.png',
+                        '/WEC/assets/images/icons/location.png',
                         width: 18,
                         height: 18,
                       ),
@@ -259,7 +259,7 @@ class _CompanyDetailScreenState extends State<CompanyDetailScreen> {
                 Row(
                   children: [
                     Image.asset(
-                      'assets/images/icons/calendar.png',
+                      '/WEC/assets/images/icons/calendar.png',
                       width: 21,
                       height: 21,
                     ),
@@ -277,7 +277,7 @@ class _CompanyDetailScreenState extends State<CompanyDetailScreen> {
                 Row(
                   children: [
                     Image.asset(
-                      'assets/images/icons/calendar.png',
+                      '/WEC/assets/images/icons/calendar.png',
                       width: 21,
                       height: 21,
                     ),
@@ -302,7 +302,7 @@ class _CompanyDetailScreenState extends State<CompanyDetailScreen> {
                 Column(
                   children: [
                     Image.asset(
-                      'assets/images/icons/client.png',
+                      '/WEC/assets/images/icons/client.png',
                       width: 30,
                       height: 30,
                     ),
@@ -330,7 +330,7 @@ class _CompanyDetailScreenState extends State<CompanyDetailScreen> {
                 Column(
                   children: [
                     Image.asset(
-                      'assets/images/icons/client.png',
+                      '/WEC/assets/images/icons/client.png',
                       width: 30,
                       height: 30,
                     ),
@@ -358,7 +358,7 @@ class _CompanyDetailScreenState extends State<CompanyDetailScreen> {
                 Column(
                   children: [
                     Image.asset(
-                      'assets/images/icons/client.png',
+                      '/WEC/assets/images/icons/client.png',
                       width: 30,
                       height: 30,
                     ),
@@ -741,7 +741,7 @@ class _CompanyDetailScreenState extends State<CompanyDetailScreen> {
           child: ClipRRect(
             borderRadius: BorderRadius.circular(12),
             child: Image.asset(
-              'assets/images/illustrations/photo.png',
+              '/WEC/assets/images/illustrations/photo.png',
               width: double.infinity,
               height: double.infinity,
               fit: BoxFit.cover,

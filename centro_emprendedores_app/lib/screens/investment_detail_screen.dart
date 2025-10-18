@@ -91,7 +91,7 @@ class _InvestmentDetailScreenState extends State<InvestmentDetailScreen> {
               // TODO: Implement menu functionality
             },
             child: Image.asset(
-              'assets/images/icons/hamburger.png',
+              '/WEC/assets/images/icons/hamburger.png',
               width: 24,
               height: 24,
             ),
@@ -320,7 +320,7 @@ class _InvestmentDetailScreenState extends State<InvestmentDetailScreen> {
               // TODO: Implement notification functionality
             },
             child: Image.asset(
-              'assets/images/icons/bell.png',
+              '/WEC/assets/images/icons/bell.png',
               width: 24,
               height: 24,
             ),
@@ -358,7 +358,7 @@ class _InvestmentDetailScreenState extends State<InvestmentDetailScreen> {
                 children: [
                   if (hasVerifiedData)
                     Image.asset(
-                      'assets/images/icons/check-mark.png',
+                      '/WEC/assets/images/icons/check-mark.png',
                       width: 16,
                       height: 16,
                     ),
@@ -384,7 +384,7 @@ class _InvestmentDetailScreenState extends State<InvestmentDetailScreen> {
                     mainAxisSize: MainAxisSize.min,
                     children: [
                       Image.asset(
-                        'assets/images/icons/microchip.png',
+                        '/WEC/assets/images/icons/microchip.png',
                         width: 18,
                         height: 18,
                       ),
@@ -404,7 +404,7 @@ class _InvestmentDetailScreenState extends State<InvestmentDetailScreen> {
                     mainAxisSize: MainAxisSize.min,
                     children: [
                       Image.asset(
-                        'assets/images/icons/location.png',
+                        '/WEC/assets/images/icons/location.png',
                         width: 18,
                         height: 18,
                       ),
@@ -500,7 +500,7 @@ class _InvestmentDetailScreenState extends State<InvestmentDetailScreen> {
         Row(
           children: [
             Image.asset(
-              'assets/images/icons/$iconPath',
+              '/WEC/assets/images/icons/$iconPath',
               width: 20,
               height: 20,
             ),
@@ -573,11 +573,11 @@ class _InvestmentDetailScreenState extends State<InvestmentDetailScreen> {
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceAround,
           children: [
-            _buildNavItem(context, 'assets/images/icons/home.png', 'Inicio', '/marketplace'),
-            _buildNavItem(context, 'assets/images/icons/return-of-investment.png', 'Find Capital', '/find-capital'),
-            _buildNavItem(context, 'assets/images/icons/video-editing.png', 'Video', '/video'),
-            _buildNavItem(context, 'assets/images/icons/group-chat.png', 'Chat', '/chat'),
-            _buildNavItem(context, 'assets/images/icons/web.png', 'Web', '/web'),
+            _buildNavItem(context, '/WEC/assets/images/icons/home.png', 'Inicio', '/marketplace'),
+            _buildNavItem(context, '/WEC/assets/images/icons/return-of-investment.png', 'Find Capital', '/find-capital'),
+            _buildNavItem(context, '/WEC/assets/images/icons/video-editing.png', 'Video', '/video'),
+            _buildNavItem(context, '/WEC/assets/images/icons/group-chat.png', 'Chat', '/chat'),
+            _buildNavItem(context, '/WEC/assets/images/icons/web.png', 'Web', '/web'),
           ],
         ),
       ),

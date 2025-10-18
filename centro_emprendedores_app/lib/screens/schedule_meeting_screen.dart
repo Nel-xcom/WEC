@@ -77,7 +77,7 @@ class _ScheduleMeetingScreenState extends State<ScheduleMeetingScreen> {
                                 mainAxisSize: MainAxisSize.min,
                                 children: [
                                   Image.asset(
-                                    'assets/images/icons/calendar.png',
+                                    '/WEC/assets/images/icons/calendar.png',
                                     width: 16,
                                     height: 16,
                                   ),
@@ -131,7 +131,7 @@ class _ScheduleMeetingScreenState extends State<ScheduleMeetingScreen> {
                                   child: Transform.rotate(
                                     angle: 1.5708, // +90 grados (para que apunte a la izquierda)
                                     child: Image.asset(
-                                      'assets/images/icons/down-arrow.png',
+                                      '/WEC/assets/images/icons/down-arrow.png',
                                       width: 16,
                                       height: 16,
                                       color: Colors.white,
@@ -196,7 +196,7 @@ class _ScheduleMeetingScreenState extends State<ScheduleMeetingScreen> {
                                   child: Transform.rotate(
                                     angle: -1.5708, // -90 grados (para que apunte a la derecha)
                                     child: Image.asset(
-                                      'assets/images/icons/down-arrow.png',
+                                      '/WEC/assets/images/icons/down-arrow.png',
                                       width: 16,
                                       height: 16,
                                       color: Colors.white,
@@ -292,7 +292,7 @@ class _ScheduleMeetingScreenState extends State<ScheduleMeetingScreen> {
               // TODO: Implement hamburger menu
             },
             child: Image.asset(
-              'assets/images/icons/hamburger.png',
+              '/WEC/assets/images/icons/hamburger.png',
               width: 24,
               height: 24,
             ),
@@ -332,7 +332,7 @@ class _ScheduleMeetingScreenState extends State<ScheduleMeetingScreen> {
               // TODO: Implement notifications
             },
             child: Image.asset(
-              'assets/images/icons/bell.png',
+              '/WEC/assets/images/icons/bell.png',
               width: 24,
               height: 24,
             ),
@@ -359,11 +359,11 @@ class _ScheduleMeetingScreenState extends State<ScheduleMeetingScreen> {
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
-            _buildNavItem(context, 'assets/images/icons/home.png', true),
-            _buildNavItem(context, 'assets/images/icons/return-of-investment.png', false),
-            _buildNavItem(context, 'assets/images/icons/video-editing.png', false),
-            _buildNavItem(context, 'assets/images/icons/group-chat.png', false),
-            _buildNavItem(context, 'assets/images/icons/web.png', false),
+            _buildNavItem(context, '/WEC/assets/images/icons/home.png', true),
+            _buildNavItem(context, '/WEC/assets/images/icons/return-of-investment.png', false),
+            _buildNavItem(context, '/WEC/assets/images/icons/video-editing.png', false),
+            _buildNavItem(context, '/WEC/assets/images/icons/group-chat.png', false),
+            _buildNavItem(context, '/WEC/assets/images/icons/web.png', false),
           ],
         ),
       ),
@@ -494,7 +494,7 @@ class _ScheduleMeetingScreenState extends State<ScheduleMeetingScreen> {
                           Row(
                             children: [
                               Image.asset(
-                                'assets/images/icons/calendar.png',
+                                '/WEC/assets/images/icons/calendar.png',
                                 width: 20,
                                 height: 20,
                               ),
