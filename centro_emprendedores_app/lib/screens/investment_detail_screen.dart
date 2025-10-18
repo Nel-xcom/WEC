@@ -3,6 +3,10 @@ import 'package:google_fonts/google_fonts.dart';
 import 'dart:math' as math;
 
 class InvestmentDetailScreen extends StatefulWidget {
+  final Map<String, dynamic> companyData;
+  
+  const InvestmentDetailScreen({Key? key, required this.companyData}) : super(key: key);
+  
   @override
   _InvestmentDetailScreenState createState() => _InvestmentDetailScreenState();
 }
@@ -10,14 +14,8 @@ class InvestmentDetailScreen extends StatefulWidget {
 class _InvestmentDetailScreenState extends State<InvestmentDetailScreen> {
   @override
   Widget build(BuildContext context) {
-    // Get company data from arguments
-    final Map<String, dynamic>? companyData = ModalRoute.of(context)!.settings.arguments as Map<String, dynamic>?;
-    
-    if (companyData == null) {
-      return Scaffold(
-        body: Center(child: Text('No data available')),
-      );
-    }
+    // Use company data from widget parameter
+    final companyData = widget.companyData;
 
     final String companyName = companyData['name'] ?? 'Empresa';
     final String category = companyData['category'] ?? 'Categoría';
@@ -309,7 +307,7 @@ class _InvestmentDetailScreenState extends State<InvestmentDetailScreen> {
             ).createShader(bounds),
             child: Text(
               'WEC',
-              style: GoogleFonts.nicoMoji(
+              style: GoogleFonts.getFont('Nico Moji',
                 fontSize: 32,
                 fontWeight: FontWeight.w400,
                 color: Colors.white,
