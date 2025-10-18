@@ -34,7 +34,7 @@ jobs:
     - name: Build iOS (no codesign)
       run: |
         cd centro_emprendedores_app
-        flutter build ios --release --no-codesign --ios-version=17.0
+        flutter build ios --release --no-codesign
         
     - name: Upload build artifacts
       uses: actions/upload-artifact@v4
