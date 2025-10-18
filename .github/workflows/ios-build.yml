@@ -18,24 +18,25 @@ jobs:
     - name: Setup Flutter
       uses: subosito/flutter-action@v2
       with:
-        flutter-version: '3.16.0'
+        flutter-version: '3.35.6'
         channel: 'stable'
         
     - name: Setup Xcode
       uses: maxim-lobanov/setup-xcode@v1
       with:
-        xcode-version: '15.0'
+        xcode-version: '16.4.0'
         
     - name: Install dependencies
       run: |
         cd centro_emprendedores_app
         flutter pub get
         
-    - name: Run Flutter analyze
+    - name: Build iOS for simulator
       run: |
         cd centro_emprendedores_app
-        flutter analyze
+        flutter build ios --simulator
         
+<<<<<<< HEAD
     - name: Run Flutter test
       run: |
         cd centro_emprendedores_app
@@ -62,7 +63,10 @@ jobs:
           -exportOptionsPlist ios/ExportOptions.plist
           
     - name: Upload IPA artifact
+=======
+    - name: Upload build artifacts
+>>>>>>> e2194f03544dffd5ca4e6124a9307deabcc75223
       uses: actions/upload-artifact@v4
       with:
-        name: ios-ipa
-        path: centro_emprendedores_app/build/ios/ipa/*.ipa
+        name: ios-build
+        path: centro_emprendedores_app/build/ios/iphonesimulator/
