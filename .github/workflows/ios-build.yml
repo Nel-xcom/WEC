@@ -31,13 +31,13 @@ jobs:
         cd centro_emprendedores_app
         flutter pub get
         
-    - name: Build iOS (no codesign)
+    - name: Build iOS for simulator
       run: |
         cd centro_emprendedores_app
-        flutter build ios --release --no-codesign
+        flutter build ios --simulator
         
     - name: Upload build artifacts
       uses: actions/upload-artifact@v4
       with:
         name: ios-build
-        path: centro_emprendedores_app/build/ios/Release-iphoneos/
+        path: centro_emprendedores_app/build/ios/iphonesimulator/
