@@ -1177,4 +1177,3 @@ class _FindCapitalScreenState extends State<FindCapitalScreen> with TickerProvid
   }
 
 }
-
